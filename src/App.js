@@ -11,8 +11,8 @@ function App() {
   function addTodo(e) {
     e.preventDefault();
     db.collection("todos").add({
-      inprogrss: true,
-      timestamp: firebase.firestore.fieldValue.serverTimestamp(),
+      inprogress: true,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       todo: todoInput,
     });
   }
@@ -33,6 +33,7 @@ function App() {
           <TextField
             id="standard-basic"
             label="write a to do"
+            value={todoInput}
             onChange={(e) => {
               setTodoInput(e.target.value);
             }}
