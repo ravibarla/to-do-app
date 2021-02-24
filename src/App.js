@@ -39,17 +39,17 @@ function App() {
   }
 
   return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <div>
-        <h1>ravi barla to do app</h1>
+    <div className="App">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
+        <h1>My to do app</h1>
         <form>
           <TextField
             id="standard-basic"
@@ -58,7 +58,7 @@ function App() {
             onChange={(e) => {
               setTodoInput(e.target.value);
             }}
-            style={{ maxWidth: "300px", width: "90vw" }}
+            style={{ width: "90vw", maxWidth: "500px" }}
           />
           <Button
             variant="contained"
@@ -69,13 +69,15 @@ function App() {
             Default
           </Button>
         </form>
-        {todos.map((todo) => (
-          <TodoListItem
-            todo={todo.todo}
-            inprogress={todo.inprogress}
-            id={todo.id}
-          />
-        ))}
+        <div style={{ width: "90vw", maxWidth: "500px", marginTop: "24px" }}>
+          {todos.map((todo) => (
+            <TodoListItem
+              todo={todo.todo}
+              inprogress={todo.inprogress}
+              id={todo.id}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
