@@ -1,8 +1,6 @@
 # Getting Started with Create React App
 
-I created this to-do-app by following the tutorial of #SanskarTiwari in youtube 
 
-the app is hosted in this link "https://todoapp-3cf2a.web.app/"
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -72,3 +70,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#Description:
+
+I created this to-do-app by following the tutorial of #SanskarTiwari in youtube 
+
+the app is hosted in this link "https://todoapp-3cf2a.web.app/"
